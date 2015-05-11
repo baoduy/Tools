@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51C391C3-45D8-4212-88AB-0606A323AFD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlLibrary</RootNamespace>
+    <AssemblyName>ControlLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Constant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Events\ColumnComparisonEventArg.cs" />
+    <Compile Include="Classes\Events\ComparisionEventArgsBase.cs" />
+    <Compile Include="Classes\Events\GroupingColumnEventArgs.cs" />
+    <Compile Include="Classes\Events\ProgressDataChangedEventArgs.cs" />
+    <Compile Include="Classes\Events\TreeViewScrollEventArgs.cs" />
+    <Compile Include="Classes\GroupColumnCollection.cs" />
+    <Compile Include="MainFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormBase.Designer.cs">
+      <DependentUpon>MainFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColumnComparison.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ColumnComparison.Designer.cs">
+      <DependentUpon>ColumnComparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CompareDataGrids.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CompareDataGrids.Designer.cs">
+      <DependentUpon>CompareDataGrids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CompareTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CompareTree.Designer.cs">
+      <DependentUpon>CompareTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ComparisionCollection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ComparisionCollection.Designer.cs">
+      <DependentUpon>ComparisionCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FolderBrowserDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FolderBrowserDialog.Designer.cs">
+      <DependentUpon>FolderBrowserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\CTreeView.Designer.cs">
+      <DependentUpon>CTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FileBrowserDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FileBrowserDialog.Designer.cs">
+      <DependentUpon>FileBrowserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GroupingDataCollection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\GroupingDataCollection.Designer.cs">
+      <DependentUpon>GroupingDataCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ListColumnComparision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ListColumnComparision.Designer.cs">
+      <DependentUpon>ListColumnComparision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserControls\ColumnComparison.resx">
+      <DependentUpon>ColumnComparison.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CompareDataGrids.resx">
+      <DependentUpon>CompareDataGrids.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CompareTree.resx">
+      <DependentUpon>CompareTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ComparisionCollection.resx">
+      <DependentUpon>ComparisionCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FolderBrowserDialog.resx">
+      <DependentUpon>FolderBrowserDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FileBrowserDialog.resx">
+      <DependentUpon>FileBrowserDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\GroupingDataCollection.resx">
+      <DependentUpon>GroupingDataCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ListColumnComparision.resx">
+      <DependentUpon>ListColumnComparision.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Schroders.DataUtility\Schroders.DataUtility.csproj">
+      <Project>{83D143C6-F613-48E3-90F3-589E53ECCF42}</Project>
+      <Name>Schroders.DataUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

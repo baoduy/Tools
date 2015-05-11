@@ -1,0 +1,13 @@
+Ver 1.2.4
+	- Seperate Usercontrol, Class to Library.
+Ver 1.2.3
+	- Compare Columns can be disable.
+Ver 1.2.2
+	- Fix can't compare csv file.
+	- Multi selection in Data Grid
+Ver 1.2.1
+	- Add Data Tree comparison.
+Ver 1.1.3
+	- Add feature for Show Result Function.
+Ver 1.1.2
+	- Add Lable link in Result tab.

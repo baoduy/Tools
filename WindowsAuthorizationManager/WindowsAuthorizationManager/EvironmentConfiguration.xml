@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<EnvironmentCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EnvironmentEntity EnvironmentName="SIT" ConnectionString="Mssql://Driver={SQL Server};Server={SIN7505,7009\bizapps};/sgAzManDB/AzmanStore" />
+  <EnvironmentEntity EnvironmentName="PRD" ConnectionString="Mssql://Driver={SQL Server};Server={sin0506\bizapps};/sgAzManDB/AzmanStore" />
+  <EnvironmentEntity EnvironmentName="UAT" ConnectionString="Mssql://Driver={SQL Server};Server={SIN7511,3000\BizApps};/sgAzManDB/AzmanStore" />
+</EnvironmentCollection>
